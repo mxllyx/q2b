@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
+@media screen and (max-width: 375px) { 
   html, body {
     background-color: powderblue;
     max-width: 375px ;
@@ -15,21 +15,22 @@
   }
   .rectangle {
     height: 150px;
-    width: 300px;
+    max-width: 350px;
     background-color: #ffffff;
     border-radius: 25px;
+    position: center;
+    padding:5px;
     
   }
   
   .centered {
       color: rgb(1, 1, 28);
       font-size: 30px;
-      position: absolute;
-      text-align: center;
+      position: center;
       font-weight: bold;
-      top: 8%;
-      left: 150px;
-      transform: translate(-50%, -50%);
+      text-align: center;
+
+    
   }
       
     form {
@@ -63,7 +64,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) { /*The following CSS runs only for displays with a width (in pixels) of less than 800px*/
+@media screen and (max-width: 1024px) { 
   html, body {
     background-color: powderblue;
     max-width: 1024px;
