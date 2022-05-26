@@ -82,26 +82,26 @@
      </select><br>
 
     
-         <label for="walkname2">Name of Walk:</label><br>
-         <input type="text" id="walkname2" name="walkname"><br>
-    
-         <label for="date2">Date:</label><br>
-         <input type="text" id="date2" name="date"><br>
-    
-         <label for="starttime2">Start Time:</label><br>
-         <input type="text" id="starttime2" name="starttime"><br>
-    
-         <label for="endtime2">End Time:</label><br>
-         <input type="text" id="endtime2" name="endtime"><br>
-    
-         <label for="meetingpoint2">Meeting Point:</label><br>
-         <input type="text" id="meetingpoint2" name="meetingpoint"><br>
-    
-         <label for="distance2">Distance in Kilometres:</label><br>
-         <input type="text" id="distance2" name="distance"><br>
-    
-         <label for="nameofleader2">Name of Leader:</label><br>
-         <input type="text" id="nameofleader2" name="nameofleader"><br>
+     <label for="walkname2">Name of Walk:</label><br>
+     <input type="text" id="walkname2" name="walkname" required maxlength="100" pattern="[A-Za-z] {,1}"><br>
+
+     <label for="date2">Date:</label><br>
+     <input type="date" id="date2" name="date" required="required"><br>
+
+     <label for="starttime2">Start Time:</label><br>
+     <input type="time" id="starttime2" name="starttime" required="required"><br>
+
+     <label for="endtime2">End Time:</label><br>
+     <input type="time" id="endtime2" name="endtime" required="required"><br>
+
+     <label for="meetingpoint2">Meeting Point:</label><br>
+     <input type="text" id="meetingpoint2" name="meetingpoint" required maxlength="100"><br>
+
+     <label for="distance2">Distance in Kilometres:</label><br>
+     <input type="number" id="distance2" name="distance" min="0" max="1000" required="required"><br>
+
+     <label for="nameofleader2">Name of Leader:</label><br>
+     <input type="text" id="nameofleader2" name="nameofleader" required="required"  pattern="[A-Za-z]{1,}"><br>
     
          <label for="comments2">Comments:</label><br>
          <input type="text" id="comments2" name="comments"><br>
